@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rate List</title>
     <style>
-        a{
+        *{
+            font-weight: bold;
+        }
+        #rate{
             top: 250px;
             left: 40%;
             position: relative;
@@ -18,9 +21,45 @@
             top: 250px;
             left: 32%;
         }
+        header{
+            background-color: yellow;
+            top:0px;
+            right: 0px;
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            /* margin:auto; */
+        }
+        header li{
+            display: inline;
+            margin-left:100px ;
+            font-size: 20px;
+            color: red;
+        }
+        header li:hover{
+            border: 2px solid black;
+            background-color: tomato;
+            color: yellow;
+        }
+        .search{
+            position: absolute;
+            right: 5px;
+            top: 1px;
+            border-radius: 20px;
+            border: 2px solid black;    
+            height: 20px;
+            
+        }
     </style>
 </head>
 <body>
+    <header>
+        <a href="index.html"><li>Home</li></a>
+        <a href="departments.html"><li>Departemnets</li></a>
+        <a href="#"><li>Contact Us</li></a>
+        <a href="bachi.html"><li>Bachi Yes Karao!</li></a>
+        <input class="search"type="text" placeholder="Search here...">
+    </header>
     <a id="rate" href="#">Rate List</a>
     <audio src="Bagawat.mp3.mp3" style="display:none;" autoplay></audio></br>
     <label id="label"></label><br>
